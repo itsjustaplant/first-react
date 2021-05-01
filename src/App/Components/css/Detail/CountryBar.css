@@ -1,0 +1,23 @@
+.country__bar{
+    width: calc(100vw - 160px);
+    margin-left: 80px;
+}
+.country__bar button{
+    background-color: var(--seconday-color);
+    width: 135px;
+    height: 40px;
+    margin-top: 80px;
+    text-align: center;
+    padding-left: 30px;
+    font-size: 16px;
+}
+@media screen and (max-width: 769px){
+    .country__bar{
+        margin-left: 24px;
+        height: 100px;
+    }
+    .country__bar button{
+        margin-top: 30px;
+        font-size: 14px;
+    }
+}

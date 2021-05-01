@@ -1,0 +1,53 @@
+.navbar{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--seconday-color);
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 2;
+}
+.navbar__title a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+@media screen and (max-width: 768px){
+    .navbar__title{
+        margin-left: 16px;
+        margin-right: auto;
+        color: var(--text-color);
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .navbar__switch{
+        font-family: 'Nunito Sans', sans-serif;
+        color: var(--text-color);
+        margin-right: 16px;
+        font-size: 16px;
+        transition: color 0.3s ease-in-out;
+    }
+}
+@media screen and (min-width: 769px){
+    .navbar__title{
+        margin-left: 80px;
+        margin-right: auto;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        transition: color 0.3s ease-in-out;
+    }
+    .navbar__switch{
+        font-family: 'Nunito Sans', sans-serif;
+        color: var(--text-color);
+        margin-right: 80px;
+        font-size: 24px;
+        transition: color 0.3s ease-in-out;
+    }
+}

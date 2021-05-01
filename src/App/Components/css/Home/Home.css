@@ -1,0 +1,9 @@
+.home{
+    grid-area: main;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: grid;
+    margin-top: 80px;
+    grid-template-areas: "search"
+                         "list";
+}

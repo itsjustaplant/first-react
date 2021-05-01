@@ -1,0 +1,101 @@
+@media screen and (max-width: 768px){
+    .home__list{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 264px);
+        grid-gap: 75px;
+        list-style: none;
+        justify-content: center;
+        grid-area: list;
+        margin-top: 81px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .list__country{
+        height: 335px;
+        background-color: var(--seconday-color);
+        border-radius: 4px;
+        transition: background-color 0.3s ease-in-out;
+    }
+    .country__flag{
+        width: 100%;
+        height: 160px;
+        border-radius: 4px 4px 0 0;
+    }
+    .country__name{
+        width: 100%;
+        padding-left: 24px;
+        color: var(--text-color);
+        font-size: 20px;
+        font-family: 'Nunito Sans', sans-serif;
+        transition: color 0.3s ease-in-out;
+    }
+    strong{
+        padding-left: 24px;
+        color: var(--text-color);
+        font-size: 14px;
+        font-family: 'Nunito Sans', sans-serif;
+        width: auto;
+        transition: color 0.3s ease-in-out;
+    }
+    .country__data{
+        width: 100%;
+        color: var(--text-color);
+        font-size: 14px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 300;
+        transition: color 0.3s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .home__list{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 264px);
+        grid-column-gap: 75px;
+        grid-row-gap: 75px;
+        padding-left: 80px;
+        padding-right: 80px;
+        list-style: none;
+        justify-content: center;
+        grid-area: list;
+        margin-top: 48px;
+    }
+    .list__country{
+        height: 335px;
+        background-color: var(--seconday-color);
+        border-radius: 4px;
+        transition: background-color 0.3s ease-in-out;
+    }
+    .country__flag{
+        width: 100%;
+        height: 160px;
+        border-radius: 4px 4px 0 0;
+    }
+    .country__name{
+        width: calc(100% - 48px);
+        padding-left: 24px;
+        padding-right: 24px;
+        color: var(--text-color);
+        font-size: 24px;
+        font-family: 'Nunito Sans', sans-serif;
+        transition: color 0.3s ease-in-out;
+    }
+    strong{
+        padding-left: 24px;
+        color: var(--text-color);
+        font-size: 16px;
+        font-family: 'Nunito Sans', sans-serif;
+        width: auto;
+        transition: color 0.3s ease-in-out;
+    }
+    .country__data{
+        width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+        color: var(--text-color);
+        font-size: 16px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 300;
+        transition: color 0.3s ease-in-out;
+    }
+}
